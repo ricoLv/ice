@@ -5,7 +5,7 @@ use stun::attributes::ATTR_USE_CANDIDATE;
 use stun::message::*;
 
 /// Represents USE-CANDIDATE attribute.
-#[derive(Default)]
+#[derive(Default,Clone)]
 pub struct UseCandidateAttr;
 
 impl Setter for UseCandidateAttr {
